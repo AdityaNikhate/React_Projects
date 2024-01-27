@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  font-family: cursive;
+  color: bisque;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 3vw;
+  background-color: #fff;
+}
+nav h1{
+  color: rgb(240, 152, 45);
+  font-weight: 900;
+  font-size: 2vw;
+}
+
+nav ul{
+  display: flex;
+  gap: 3vw;
+  list-style-type: none;
+  align-items: center;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(153, 64, 237);
+  font-weight: 700;
+}
+
+h3{
+  display: none;
+}
+
+/* For Mobile View */
+@media (max-width : 600px){
+  nav{
+    padding: 2vh 3vw;
+    z-index: 9;
+  }
+  nav h1{
+    font-size: 6vw;
+  }
+  nav ul{
+    display: none;
+  }
+
+  h3{
+    display: inline;
+    position: relative;
+    top: 0.5vh;
+    right: 0.7vw;
+    color: rgb(218, 55, 218);
+    font-weight: 900;
+    font-size: 3vh;
+  }
+
+  .mobnav{
+    background-color: rgba(230, 92, 230, 0.716);
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 1px 5px 5px 1000px;
+    padding: 4vh 15vw;
+    transition-duration: 0.7s;
+    padding-left: 40vw;
+
+  }
+  .mobnav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    gap: 3vh;
+  }
+  .mobnav a{
+    color: rgb(39, 243, 137);
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 2.2vh;
+  }
+  .mobhid{
+    top: 9vh;
+    right: 0;
+  }
+  
+}
